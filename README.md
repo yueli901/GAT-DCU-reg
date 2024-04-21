@@ -61,7 +61,7 @@ Data for other years (2015-2023) can be downloaded from this [link](https://pan.
 
 If you find this repository, e.g., the code and the datasets, useful in your research, please cite our paper.
 
-For the original Mxnet implementation of the baseline ST-MetaNet model, please refer to the ![ST-MetaNet repository](https://github.com/panzheyi/ST-MetaNet) and the following paper:
+For the original Mxnet implementation of the baseline ST-MetaNet model, please refer to the [ST-MetaNet repository](https://github.com/panzheyi/ST-MetaNet) and the following paper:
 
 - Zheyi Pan, Yuxuan Liang, Weifeng Wang, Yong Yu, Yu Zheng, and Junbo Zhang. [Urban Traffic Prediction from Spatio-Temporal Data Using Deep Meta Learning](https://www.researchgate.net/publication/333186315_Urban_Traffic_Prediction_from_Spatio-Temporal_Data_Using_Deep_Meta_Learning). 2019. In The 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD'19), August 4–8, 2019, Anchorage, AK, USA.
 
