@@ -1,0 +1,38 @@
+dataset:
+  dataloader: dataloader_all_sensors_seq2seq
+  eval_prop: 0.1
+  input_dim: 13
+  input_len: 12
+  output_dim: 2
+  output_len: 1
+  time_interval: 2
+  train_prop: 0.7
+model:
+  geo_hiddens:
+  - 32
+  - 32
+  graph_type:
+  - MetaGAT
+  - None
+  name: st-metanet
+  rnn_hiddens:
+  - 32
+  - 32
+  rnn_type:
+  - MyGRUCell
+  - MetaGRUCell
+  type: seq2seq
+seed: 2
+training:
+  batch_size: 32
+  cl_decay_steps: 2000
+  clip_gradient: 5
+  early_stop_epoch: 50
+  early_stop_metric: rmse
+  lambda_reg: 1000000.0
+  lr: 0.01
+  lr_decay_factor: 0.1
+  lr_decay_step: 7020
+  lr_min: 2.0e-06
+  use_sampling: true
+  wd: 0
