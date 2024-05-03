@@ -74,9 +74,9 @@ def dataloader(dataset):
     ti = dataset['time_interval']
     num_time_steps = data.shape[1]
     reshaped_data = tf.reshape(data, (data.shape[0], -1, ti, data.shape[2]))
-    volume_data = tf.reduce_sum(reshaped_data[:, :, :, 0], axis=2) # Volume aggregation by sum
-    speed_data = tf.reduce_mean(reshaped_data[:, :, :, 1], axis=2) # Speed aggregation by mean
-    data = tf.stack([volume_data, speed_data], axis=-1)
+    speed_data = tf.reduce_mean(reshaped_data[:, :, :, 0], axis=2) # Speed aggregation by mean
+    volume_data = tf.reduce_mean(reshaped_data[:, :, :, 1], axis=2) # Volume aggregation by mean
+    data = tf.stack([speed_data, volume_data], axis=-1)
     timestamps = timestamps[::ti]
     
     n_timestamp = int(timestamps.shape[0]) # adjust length of total data
